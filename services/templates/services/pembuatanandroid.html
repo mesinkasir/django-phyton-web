@@ -1,0 +1,29 @@
+{% extends "services/layout.html" %}
+
+{% block body %}
+
+<div class="col-12 p-3 p-md-5">
+    <h1><strong><a href=""class="text-success">{% for title in title  %}{{title}}{% endfor %}</a></strong></h1>
+    <h3>{% for desc in desc %}{{desc}}{% endfor %}</h3>
+    <img class="img-fluid" alt="{% for desc in desc %}{{desc}}{% endfor %}" 
+    src="{% for img in img %}{{img}}{% endfor %}"/>
+    {% for cta in cta %}<p>{{cta}}</p>{% endfor %}
+    <div class="row p-3">
+        {% for themes in themes %}
+        <div class="col-6 col-md-4 p-3">
+            <div class="ratio ratio-16x9">
+                <iframe class="rounded" src="https://www.youtube.com/embed/{{themes}}" title="{% for title in title %}{{title}}{% endfor %}" allowfullscreen></iframe>
+              </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% for pricing in pricing %}
+    <div class="p-3">
+        {{pricing}}
+    </div>
+    {% endfor %}
+</div>
+
+    
+    {% endblock body %}
+  

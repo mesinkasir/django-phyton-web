@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="{% for gsite in gsite  %}{{gsite}}{% endfor %}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% for SEO1 in SEO1  %}{{SEO1}}{% endfor %}</title>
+<meta content="{% for SEO2 in SEO2  %}{{SEO2}}{% endfor %}" name="description"/>
+<meta content='https://axcora.com' property='og:author'/>
+<meta content='index, follow' name='robots'/>
+<link rel="icon" type="image/x-icon" href="{% for himg in himg  %}{{himg}}{% endfor %}" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');html, body, p {font: 100 1.215rem/1.375rem  'Quicksand', sans-serif;}d {font: 100 0.705rem/0.805rem  'Quicksand', sans-serif;}a:link {text-decoration: none;}</style>
+</head>
+<body class="bg-light">
+<div class="container">
+<div class="row">
+<div class="col-12 text-end">
+<a href="https://github.com/mesinkasir/django-phyton-web" class="text-dark border border-dark p-1"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> Github</a></div>
+<div class="col-12 p-3 text-center p-md-5">
+<img class="img-fluid" alt="{% for title in title  %}{{title}}{% endfor %}" src=" {% for himg in himg  %}{{himg}}{% endfor %}"/>
+<h1><strong><a href="/" class="text-dark">{% for title in title  %}{{title}}{% endfor %}.</a></strong></h1>
+<p>{% for desc in desc  %}{{desc}}{% endfor %}</p>
+</div> 
+<div class="col-12 col-md-6 p-3 text-center p-md-5">
+<img class="img-fluid" alt="{% for hsec1 in hsec1  %}{{hsec1}}{% endfor %}"
+src="{% for aimg in aimg  %}{{aimg}}{% endfor %}"/>
+</div> 
+<div class="col-12 col-md-6 p-3">
+<h3><strong><a href="/" class="text-success">{% for hsec1 in hsec1  %}{{hsec1}}{% endfor %}</a></strong></h3>
+<p>{% for sec1 in sec1  %}{{sec1}}{% endfor %}</p>
+<a href="{% for uri1 in uri1  %}{{uri1}}{% endfor %}" class="border border-success p-1 text-success">Pilih Layanan →</a>
+</div> 
+<div class="col-12 col-md-6 p-3 p-md-5">
+<h3><strong><a href="/" class="text-danger">{% for hsec2 in hsec2  %}{{hsec2}}{% endfor %}</a></strong></h3>
+<p>{% for sec2 in sec2  %}{{sec2}}{% endfor %}</p>
+<a href="{% for uri2 in uri2  %}{{uri2}}{% endfor %}" class="border border-danger p-1 text-danger">Pilih Layanan →</a>
+</div> 
+<div class="col-12 col-md-6 p-3 text-center p-md-5">
+<img class="img-fluid" alt="{% for hsec2 in hsec2  %}{{hsec2}}{% endfor %}" src="{% for bimg in bimg  %}{{bimg}}{% endfor %}"/>
+</div> 
+<div class="col-12 col-md-6 p-3 text-center">
+<img class="img-fluid" alt="pembuatan aplikasi kasir toko restoran akuntansi sekolah" src="{% for cimg in cimg  %}{{cimg}}{% endfor %}"/>
+</div> 
+<div class="col-12 col-md-6 p-3">
+<h3><strong><a href="/" class="text-primary">{% for hsec3 in hsec3  %}{{hsec3}}{% endfor %}</a></strong></h3>
+<p>{% for sec3 in sec3  %}{{sec3}}{% endfor %}</p>
+<a href="{% for uri3 in uri3  %}{{uri3}}{% endfor %}" class="border border-primary p-1 text-primary">Pilih Layanan →</a>
+</div> 
+<div class="col-12 p-3 text-center">
+<img class="img-fluid" alt="{% for hfoot in hfoot  %}{{hfoot}}{% endfor %}" src="{% for fotimg in fotimg  %}{{fotimg}}{% endfor %}"/>
+<h3>{% for hfoot in hfoot  %}{{hfoot}}{% endfor %}</h3>
+<p>{% for cfoot in cfoot  %}{{cfoot}}{% endfor %}</p>
+<a href="{% for wa in wa  %}{{wa}}{% endfor %}" class="border border-success p-1 text-success">Whatsapp</a>
+<a href="{% for call in call  %}{{call}}{% endfor %}" class="border border-primary p-1 text-primary">Call Us</a>
+<a href="{% for mail in mail  %}{{mail}}{% endfor %}" class="border border-danger p-1 text-danger">Email</a>
+</div>
+<footer class="col-12 p-3 text-center border-top text-secondary">
+        <d><small>A site built with Django Phyton present by <a href="https://axcora.com" class="text-secondary">axcora</a> 
+    <br/>developer <a href="https://creativebydre.vercel.app" class="text-secondary">creativebydre</a>.
+    </small></d>>
+</footer>
+</div>
+</div> 
+</body>
+</html>
